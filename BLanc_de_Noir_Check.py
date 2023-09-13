@@ -338,7 +338,7 @@ def displayClick(L_value,a_value,b_value,submit):
         model =svm.SVC(kernel='rbf', gamma=0.2, C=48,) 
         clf = model.fit(X, y)
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_01= X0.query("target == 0")
         X_02= X0.query("target == 2")
@@ -394,7 +394,7 @@ def displayClick(L_value,a_value,b_value,submit):
         model =svm.SVC(kernel='rbf', gamma=0.2, C=48,)
         clf = model.fit(X, y)
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_01= X0.query("target == 0")
         X_02= X0.query("target == 2")
@@ -450,7 +450,7 @@ def displayClick(L_value,a_value,b_value,submit):
         X_train, X_test, y_train, y_test = train_test_split(X_scale,y,test_size=0.3, random_state=42)
         X_la= X_scale_plot[['L*','a*']]
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_01= X0.query("target == 0")
         X_02= X0.query("target == 2")
@@ -527,7 +527,7 @@ def displayClick(L_value,a_value,b_value,submit):
         X_scale_plot=pd.DataFrame(X_scale, columns=['L*','a*','b*'])
         X_train, X_test, y_train, y_test = train_test_split(X_scale,y,test_size=0.3, random_state=42)
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_la= X_scale_plot[['L*','a*']]
         X_01= X0.query("target == 0")
@@ -600,7 +600,7 @@ def displayClick(L_value,a_value,b_value,submit):
         X_train, X_test, y_train, y_test = train_test_split(X_scale,y,test_size=0.3, random_state=42)
         X_lb= X_scale_plot[['L*','b*']]
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_la= X_scale_plot[['L*','a*']]
         X_01= X0.query("target == 0")
@@ -681,7 +681,7 @@ def displayClick(L_value,a_value,b_value,submit):
         X_lb= X_scale_plot[['L*','b*']]
         X_la= X_scale_plot[['L*','a*']]
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_01= X0.query("target == 0")
         X_02= X0.query("target == 2")
@@ -753,7 +753,7 @@ def displayClick(L_value,a_value,b_value,submit):
         X_train, X_test, y_train, y_test = train_test_split(X_scale,y,test_size=0.3, random_state=42)
         X_ab= X_scale_plot[['a*','b*']]
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_01= X0.query("target == 0")
         X_02= X0.query("target == 2")
@@ -833,7 +833,7 @@ def displayClick(L_value,a_value,b_value,submit):
         X_train, X_test, y_train, y_test = train_test_split(X_scale,y,test_size=0.3, random_state=42)
         X_ab= X_scale_plot[['a*','b*']]
         url2=r"https://raw.githubusercontent.com/Der-Hensel/Blanc_de_Noir_check/main/plotting_reference.csv"
-        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=',')
+        target_3f=pd.read_csv(url2, on_bad_lines='skip', delimiter=';')
         X0= pd.concat([X_scale_plot,target_3f[['target','target_id']]],axis=1)
         X_01= X0.query("target == 0")
         X_02= X0.query("target == 2")
