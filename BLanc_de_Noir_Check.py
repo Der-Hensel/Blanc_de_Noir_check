@@ -27,9 +27,6 @@ from sklearn.metrics import roc_auc_score
 from IPython.display import Image
 from IPython.display import display_html
 from sklearn.model_selection import GridSearchCV
-warnings.filterwarnings('ignore')
-get_ipython().run_line_magic('load_ext', 'autoreload')
-get_ipython().run_line_magic('autoreload', '')
 
 
 # In[ ]:
