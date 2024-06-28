@@ -1,3 +1,7 @@
 # Blanc de Noir check browser application 
-Welcome to the Blanc de Noir Check browser application. A interactive Dashboard for members of the wine industry to use a support vector machine that differentiates between White wine, Blanc de Noir wine and Rosé wine.
+Welcome to the Blanc de Noir Check browser application. A interactive Dashboard for members of the wine industry to use a support vector machine that differentiates between White wine, Blanc de Noir wine and Rosé wine. The app is running as Heroku App under the following app address: https://blancdenoircheck-217f19ee6419.herokuapp.com/.
+In Germany the wine style Blanc de Noir is subject to state regulations. In order to sell a Blanc de Noir the winemaker has to contact the wine control entitities and the wines are assessed by color, aroma, and taste. The color of a Blanc de Noir has to be "Like a white wine". The typical color of a white wine is nowhere defined, because it is not possible. Therefore to objectify the process of color classification, this study was performed. The CIE Lab coordinates are used to train an support vector machine. The article corresponding to this application is currently under reiew
 
+## App Architecture
+The App is running on an virtual eniromnent. At the beginning, the different Datasets are loaded from this repository alongsite a CSS stylesheet. After the computation of the SVM, the boxplots, the two-, and three-dimensional projection, the App waits for unser intersaction. When the user inputs his CIE Lab coordinates, the App will classify the new wine as Blanc de Noir or Not Blanc de Noir. 
+![Flowchart Blanc de Noir Check](https://github.com/Der-Hensel/Blanc_de_Noir_check/assets/109506200/902acbf3-a5b7-4cfb-915c-f7405250002a)
